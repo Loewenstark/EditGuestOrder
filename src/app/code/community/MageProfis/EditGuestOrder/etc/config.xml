@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <MageProfis_EditGuestOrder>
+            <version>0.0.1</version>
+        </MageProfis_EditGuestOrder>
+    </modules>
+
+    <global>
+        <blocks>
+            <editguestorder>
+                <class>MageProfis_EditGuestOrder_Block</class>
+            </editguestorder>
+            <adminhtml>
+                <rewrite>
+                    <sales_order_view_info>MageProfis_EditGuestOrder_Block_Adminhtml_Sales_Order_View_Info</sales_order_view_info>
+                </rewrite>
+            </adminhtml>
+        </blocks>
+    </global>
+
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <MageProfis_EditGuestOrder after="Mage_Adminhtml">MageProfis_EditGuestOrder</MageProfis_EditGuestOrder>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+
+    <adminhtml>
+        <layout>
+            <updates>
+                <editguestorder>
+                    <file>mageprofis/editguestorder.xml</file>
+                </editguestorder>
+            </updates>
+        </layout>
+    </adminhtml>
+</config>

@@ -1,0 +1,35 @@
+<div id="editguestorder_overlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,.6); z-index:9998;">
+    <div class="editguestorder-content" style="position:relative; top:10%; width:640px; min-height:240px; padding:20px; margin:0 auto; background:#fff; border-radius:12px;">
+        <form method="post" action="<?php echo $this->getUrl('*/editguestorder/post'); ?>" class="">
+            <input type="hidden" name="form_key" value="<?php echo Mage::getSingleton('core/session')->getFormKey() ?>" />
+            <input type="hidden" name="order_id" value="" />
+            <div class="entry-edit">
+                <div class="entry-edit-head"><h4><?php echo $this->__('Edit'); ?></h4></div>
+                <fieldset>
+                    <table class="form-list">
+                        <tbody>
+                            <tr>
+                                <td class="label"><label for="customer_firstname"><?php echo $this->__('Customer Firstname'); ?></label></td>
+                                <td class="value"><input type="text" name="customer_firstname" id="customer_firstname" value="" /></td>
+                            </tr>
+                            <tr>
+                                <td class="label"><label for="customer_lastname"><?php echo $this->__('Customer Lastname'); ?></label></td>
+                                <td class="value"><input type="text" name="customer_lastname" id="customer_lastname" value="" /></td>
+                            </tr>
+                            <tr>
+                                <td class="label"><label for="customer_email"><?php echo $this->__('Email'); ?></label></td>
+                                <td class="value"><input type="text" name="customer_email" id="customer_email" value="" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="form-buttons">
+                        <button type="button" id="editguestorder_btn_cncl" class="scalable cancel"><span><span><span><?php echo $this->__('Cancel'); ?></span></span></span></button>
+                        <button type="button" id="editguestorder_btn_save" class="scalable save"><span><span><span><?php echo $this->__('Save'); ?></span></span></span></button>
+                        <span class="indicator" style="display:none;"><span><?php echo $this->__('Loading...'); ?></span></span>
+                    </p>
+                </fieldset>
+            </div>
+        </form>
+        </div>
+    </div>
+</div>

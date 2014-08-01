@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<layout>
+    <adminhtml_sales_order_view>
+        <reference name="head">
+            <action method="addJs"><file>mageprofis/editguestorder/adminhtml/editguestorder.js</file></action>
+        </reference>
+        <reference name="before_body_end">
+            <block type="core/template" name="editguestorder.overlay" template="mageprofis/editguestorder/form.phtml"/>
+        </reference>
+    </adminhtml_sales_order_view>
+</layout>

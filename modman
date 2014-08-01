@@ -1,0 +1,9 @@
+src/app/code/community/MageProfis/EditGuestOrder                                  app/code/community/MageProfis/EditGuestOrder
+
+src/app/design/adminhtml/default/default/layout/mageprofis/editguestorder.xml     app/design/adminhtml/default/default/layout/mageprofis/editguestorder.xml
+
+src/app/design/adminhtml/default/default/template/mageprofis/editguestorder       app/design/adminhtml/default/default/template/mageprofis/editguestorder
+
+src/app/etc/modules/MageProfis_EditGuestOrder.xml                                 app/etc/modules/MageProfis_EditGuestOrder.xml
+
+src/js/mageprofis/editguestorder/adminhtml/editguestorder.js                      js/mageprofis/editguestorder/adminhtml/editguestorder.js
